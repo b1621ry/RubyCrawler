@@ -9,7 +9,8 @@ CSV.foreach('company.csv',headers:true) do |data|
   #company.csvからカラム"company"の情報を取得
   name = data["company"]
   #google検索をかける
-  url = "https://www.google.co.jp/search?q=#{name}"
+  #url = "https://www.google.co.jp/search?q=#{name}"
+  url = "http://rsi.c.fun.ac.jp/RSNPservice/WISrsnp/EntryViewer"
   #url用にエンコード
   url_escape = URI.escape(url)
 
